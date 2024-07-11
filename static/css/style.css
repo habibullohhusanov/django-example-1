@@ -4,6 +4,9 @@
     text-decoration: none;
 }
 a {
-    color: red;
+    color: #000;
     font-size: 40px;
+}
+a:active {
+    color: #ff0000;
 }

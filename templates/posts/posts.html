@@ -1,4 +1,4 @@
-{% extends "posts/layout.html" %}
+{% extends "layout.html" %}
 {% block title %}Posts{% endblock title %}
 {% block content %}
 <div>
@@ -7,7 +7,9 @@
         {% for post in  posts %}
         <div>
             <p>{{post.id}}</p>
-            <h1>{{ post.title }}</h1>
+            <a href="{% url 'posts_show' id=post.id %}">
+                <h1>{{ post.title }}</h1>
+            </a>
             <p>{{ post.body }}</p>
             <img width="250" src="{{ post.image_url }}" alt="{{ post.image_url }}">
         </div>

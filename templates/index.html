@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <a href="/dashboard">Dashboard</a>
-    <a href="/posts">Posts</a>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block title %}Posts{% endblock title %}
+{% block content %}
+    <h1>Index</h1>
+    <p id="location"></p>
+    {% comment %} <script>
+        var lc = document.querySelector('#location');
+        var location = window.location.href
+        function write() {
+            ls.value = location
+        }
+    </script> {% endcomment %}
+{% endblock content %}

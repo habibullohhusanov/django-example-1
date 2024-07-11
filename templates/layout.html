@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+    <nav>
+        <a href="/">Index</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="{% url 'posts' %}">Posts</a>
+    </nav>
     {% block content %}
 
     {% endblock content %}

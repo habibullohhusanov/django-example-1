@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Post {{post.id}} {% endblock title %}
+{% block content %}
+<div>
+    <a href="/">Index</a>
+    <div>
+        <div>
+            <p>{{post.id}}</p>
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.body }}</p>
+            <img width="250" src="{{ post.image_url }}" alt="{{ post.image_url }}">
+        </div>
+    </div>
+</div>
+{% endblock content %}
