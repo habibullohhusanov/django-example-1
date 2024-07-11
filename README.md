@@ -37,7 +37,13 @@ Create database
 ```
 python manage.py migrate
 ```
+
 Create super admin
 ```
 python manage.py createsuperuser
+```
+
+Install Pillow packgage
+```
+pipenv install pillow
 ```
